@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	ChaSen
+%define		pdir	Text
+%define		pnam	ChaSen
 Summary:	Text::ChaSen - ChaSen library module for Perl
 Summary(pl):	Text::ChaSen - modu³ biblioteki ChaSen dla Perla
 Name:		perl-Text-ChaSen
