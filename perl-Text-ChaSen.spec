@@ -9,7 +9,7 @@ Summary:	Text::ChaSen - ChaSen library module for Perl
 Summary(pl):	Text::ChaSen - modu³ biblioteki ChaSen dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.03
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/chasen/%{pdir}-%{pnam}-%{version}.tar.gz
