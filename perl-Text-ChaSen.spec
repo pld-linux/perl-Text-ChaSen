@@ -5,12 +5,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	ChaSen
-Summary:	ChaSen Perl Module
-Summary(pl):	Modu³ perla ChaSen
+Summary:	Text::ChaSen - ChaSen library module for Perl
+Summary(pl):	Text::ChaSen - modu³ biblioteki ChaSen dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.03
 Release:	1
-License:	Distributable
+License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/chasen/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source-md5	1f5f8b1c79b815c1bc7d171971f1f4a4
@@ -23,24 +23,19 @@ Requires:	chasen
 Obsoletes:	chasen-perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(anything_fake_or_conditional)'
-
 %description
-ChaSen Perl Module.
+Text::ChaSen - ChaSen library module for Perl.
 
 %description -l pl
-Modu³ perla ChaSen.
+Text::ChaSen - modu³ biblioteki ChaSen dla Perla.
 
 %prep
-%setup -q -n Text-ChaSen-%{version}
-#%%patch0 -p1
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 
-# if module isn't noarch, use:
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
 
@@ -59,5 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %{perl_vendorarch}/Text/ChaSen.pm
-%{perl_vendorarch}/auto/Text/ChaSen
+%dir %{perl_vendorarch}/auto/Text/ChaSen
+%{perl_vendorarch}/auto/Text/ChaSen/ChaSen.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Text/ChaSen/ChaSen.so
 %{_mandir}/man3/*
