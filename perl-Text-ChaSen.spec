@@ -13,7 +13,7 @@ Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/chasen/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source-md5	1f5f8b1c79b815c1bc7d171971f1f4a4
+# Source0-md5:	1f5f8b1c79b815c1bc7d171971f1f4a4
 #Patch0:		http://www.daionet.gr.jp/~knok/chasen/%%{pnam}.pm-1.03-pod-fix.diff
 URL:		http://www.daionet.gr.jp/~knok/chasen/
 BuildRequires:	perl-devel >= 5.8.0
