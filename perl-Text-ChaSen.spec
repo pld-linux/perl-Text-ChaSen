@@ -7,7 +7,7 @@
 %define	pnam	ChaSen
 Summary:	Text::ChaSen - ChaSen library module for Perl
 Summary(pl):	Text::ChaSen - modu³ biblioteki ChaSen dla Perla
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Text-ChaSen
 Version:	1.03
 Release:	3
 License:	distributable
