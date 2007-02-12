@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	ChaSen
 Summary:	Text::ChaSen - ChaSen library module for Perl
-Summary(pl):	Text::ChaSen - modu≥ biblioteki ChaSen dla Perla
+Summary(pl.UTF-8):   Text::ChaSen - modu≈Ç biblioteki ChaSen dla Perla
 Name:		perl-Text-ChaSen
 Version:	1.03
 Release:	3
@@ -26,8 +26,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Text::ChaSen - ChaSen library module for Perl.
 
-%description -l pl
-Text::ChaSen - modu≥ biblioteki ChaSen dla Perla.
+%description -l pl.UTF-8
+Text::ChaSen - modu≈Ç biblioteki ChaSen dla Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
