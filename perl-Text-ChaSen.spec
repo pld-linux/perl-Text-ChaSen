@@ -55,6 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README
 %{perl_vendorarch}/Text/ChaSen.pm
 %dir %{perl_vendorarch}/auto/Text/ChaSen
-%{perl_vendorarch}/auto/Text/ChaSen/ChaSen.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Text/ChaSen/ChaSen.so
 %{_mandir}/man3/*
